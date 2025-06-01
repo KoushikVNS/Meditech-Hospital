@@ -254,12 +254,26 @@
                             <span>Multi-Specialty Hospital</span>
                         </div>
                         <h1 class="hero-title">
-                            Meditech
-                            <span class="text-primary">Laparoscopic Centre</span>
+                            Excellence in
+                            <span class="text-primary">Healthcare</span>
                         </h1>
                         <p class="hero-description">
-                            Advanced healthcare with a focus on General & Laparoscopic Surgery. Providing comprehensive medical care with state-of-the-art facilities in Varanasi.
+                            Advanced medical care with state-of-the-art laparoscopic surgery, comprehensive specialties, and 24/7 emergency services in the heart of Varanasi.
                         </p>
+                        <div class="hero-features">
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                                <span>Ayushman Bharat Empaneled</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                <span>24/7 Emergency Services</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-certificate" aria-hidden="true"></i>
+                                <span>20+ Years Experience</span>
+                            </div>
+                        </div>
                         <div class="hero-location">
                             <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                             <span>Lane-4, Aawas Vikas Colony, Daulatpur Road, Varanasi</span>
@@ -323,6 +337,66 @@
             </div>
         </section>
 
+        <!-- Features Highlight Section -->
+        <section class="features-highlight" aria-labelledby="features-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="features-heading">Why Choose Meditech?</h2>
+                    <p>Leading healthcare provider in Varanasi with modern facilities and expert medical team</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-md" aria-hidden="true"></i>
+                        </div>
+                        <h3>Expert Specialists</h3>
+                        <p>Highly qualified doctors with years of experience in their respective fields</p>
+                        <div class="feature-stats">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Specialists</span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-heartbeat" aria-hidden="true"></i>
+                        </div>
+                        <h3>Advanced Surgery</h3>
+                        <p>State-of-the-art laparoscopic and minimally invasive surgical procedures</p>
+                        <div class="feature-stats">
+                            <span class="stat-number">10000+</span>
+                            <span class="stat-label">Surgeries</span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-ambulance" aria-hidden="true"></i>
+                        </div>
+                        <h3>24/7 Emergency</h3>
+                        <p>Round-the-clock emergency services with immediate medical attention</p>
+                        <div class="feature-stats">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Available</span>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3>Cashless Treatment</h3>
+                        <p>Empaneled with major insurance providers and Ayushman Bharat scheme</p>
+                        <div class="feature-stats">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Insurance Partners</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Doctors Section -->
         <section id="doctors" class="doctors" aria-labelledby="doctors-heading">
             <div class="container">
@@ -332,24 +406,45 @@
                 </div>
 
                 <!-- Featured Doctor -->
-                <article class="featured-doctor">
-                    <div class="doctor-badge">
-                        <i class="fas fa-award" aria-hidden="true"></i>
+                <article class="featured-doctor" style="margin-bottom: 60px; position: relative;">
+                    <div class="doctor-badge" style="display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 12px 20px; border-radius: 25px; font-size: 14px; font-weight: 600; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); text-transform: uppercase; letter-spacing: 0.5px;">
+                        <i class="fas fa-award" aria-hidden="true" style="font-size: 16px;"></i>
                         <span>Founder & Chief Surgeon</span>
                     </div>
-                    <div class="doctor-card featured">
-                        <div class="doctor-image">
-                            <img src="images/dr-shankar-das.jpg" alt="Dr. Shankar Das - Chief Surgeon and Founder of Meditech Laparoscopic Centre" loading="lazy">
+                    <div class="doctor-card featured" style="display: grid; grid-template-columns: 400px 1fr; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15); border: 2px solid #dbeafe; transition: all 0.3s ease; min-height: 450px;">
+                        <div class="doctor-image" style="position: relative; height: 450px; overflow: hidden; background: linear-gradient(135deg, #f8fafc, #e2e8f0);">
+                            <img src="images/dr-shankar-das.jpg" alt="Dr. Shankar Das - Chief Surgeon and Founder of Meditech Laparoscopic Centre" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 0.3s ease;">
+                            <div style="position: absolute; bottom: 20px; left: 20px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 12px 16px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                                <div style="display: flex; align-items: center; gap: 8px; color: #2563eb; font-weight: 600; font-size: 14px;">
+                                    <i class="fas fa-stethoscope" style="font-size: 16px;"></i>
+                                    <span>20+ Years Experience</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="doctor-info">
-                            <h3>Dr. Shankar Das</h3>
-                            <p class="doctor-specialty">General and Laparoscopic Surgery</p>
-                            <div class="doctor-details">
-                                <div class="detail-item">
-                                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-                                    <div>
-                                        <h4>Qualifications</h4>
-                                        <p>MBBS, M.S (Surgeon), IMS (BHU), FAMS, FAIS, FIAGES, FMAS, FICS</p>
+                        <div class="doctor-info" style="padding: 48px; display: flex; flex-direction: column; justify-content: center; background: linear-gradient(135deg, #ffffff, #f8fafc);">
+                            <h3 style="font-size: 2.5rem; font-weight: 700; color: #1f2937; margin-bottom: 12px; line-height: 1.2;">Dr. Shankar Das</h3>
+                            <p class="doctor-specialty" style="color: #2563eb; font-weight: 600; font-size: 1.25rem; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 0.5px;">General and Laparoscopic Surgery</p>
+                            
+                            <div class="doctor-details" style="margin-top: 20px;">
+                                <div class="detail-item" style="display: flex; align-items: flex-start; gap: 16px; padding: 20px; background: rgba(37, 99, 235, 0.05); border-radius: 12px; border-left: 4px solid #2563eb;">
+                                    <i class="fas fa-graduation-cap" aria-hidden="true" style="color: #2563eb; font-size: 20px; margin-top: 4px;"></i>
+                                    <div style="flex: 1;">
+                                        <h4 style="font-size: 1.1rem; font-weight: 600; color: #1f2937; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+                                            Qualifications & Certifications
+                                            <span style="background: #2563eb; color: white; padding: 2px 8px; border-radius: 12px; font-size: 10px; font-weight: 500;">EXPERT</span>
+                                        </h4>
+                                        <p style="color: #4b5563; line-height: 1.6; margin: 0; font-weight: 500;">MBBS, M.S (Surgeon), IMS (BHU), FAMS, FAIS, FIAGES, FMAS, FICS</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px;">
+                                    <div style="background: rgba(16, 185, 129, 0.1); padding: 16px; border-radius: 12px; text-align: center; border: 1px solid rgba(16, 185, 129, 0.2);">
+                                        <div style="color: #10b981; font-size: 1.5rem; font-weight: 700; margin-bottom: 4px;">10000+</div>
+                                        <div style="color: #6b7280; font-size: 14px; font-weight: 500;">Successful Surgeries</div>
+                                    </div>
+                                    <div style="background: rgba(245, 158, 11, 0.1); padding: 16px; border-radius: 12px; text-align: center; border: 1px solid rgba(245, 158, 11, 0.2);">
+                                        <div style="color: #f59e0b; font-size: 1.5rem; font-weight: 700; margin-bottom: 4px;">20+</div>
+                                        <div style="color: #6b7280; font-size: 14px; font-weight: 500;">Years Experience</div>
                                     </div>
                                 </div>
                             </div>
@@ -359,7 +454,10 @@
 
                 <!-- Other Doctors -->
                 <div class="doctors-grid">
-                    <article class="doctor-card">
+                    <article class="doctor-tile">
+                        <div class="doctor-icon">
+                            <i class="fas fa-user-md" aria-hidden="true"></i>
+                        </div>
                         <div class="doctor-info">
                             <h3>Dr. Ajay Kumar</h3>
                             <p class="doctor-specialty">Surgical Oncology</p>
@@ -367,10 +465,17 @@
                                 <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                                 <span>MBBS, MS, MCH (Oncology)</span>
                             </div>
+                            <div class="doctor-experience">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                <span>Cancer Surgery Specialist</span>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="doctor-card">
+                    <article class="doctor-tile">
+                        <div class="doctor-icon">
+                            <i class="fas fa-bone" aria-hidden="true"></i>
+                        </div>
                         <div class="doctor-info">
                             <h3>Dr. Sunil Kumar Singh</h3>
                             <p class="doctor-specialty">Orthopedic</p>
@@ -378,10 +483,17 @@
                                 <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                                 <span>MBBS, MS (Ortho), IMS (BHU)</span>
                             </div>
+                            <div class="doctor-experience">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                <span>Joint & Bone Specialist</span>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="doctor-card">
+                    <article class="doctor-tile">
+                        <div class="doctor-icon">
+                            <i class="fas fa-syringe" aria-hidden="true"></i>
+                        </div>
                         <div class="doctor-info">
                             <h3>Dr. V.K Sirvastava</h3>
                             <p class="doctor-specialty">Anesthesia</p>
@@ -389,10 +501,17 @@
                                 <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                                 <span>MBBS, MD (Anesthesia)</span>
                             </div>
+                            <div class="doctor-experience">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                <span>Anesthesia Expert</span>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="doctor-card">
+                    <article class="doctor-tile">
+                        <div class="doctor-icon">
+                            <i class="fas fa-female" aria-hidden="true"></i>
+                        </div>
                         <div class="doctor-info">
                             <h3>Dr. Rita Sinha</h3>
                             <p class="doctor-specialty">Gynecology</p>
@@ -400,10 +519,17 @@
                                 <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                                 <span>MBBS, DGO</span>
                             </div>
+                            <div class="doctor-experience">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                <span>Women's Health Expert</span>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="doctor-card">
+                    <article class="doctor-tile">
+                        <div class="doctor-icon">
+                            <i class="fas fa-stethoscope" aria-hidden="true"></i>
+                        </div>
                         <div class="doctor-info">
                             <h3>Dr. V.K Singh</h3>
                             <p class="doctor-specialty">Internal Medicine</p>
@@ -411,10 +537,17 @@
                                 <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                                 <span>MBBS, MD (Medicine)</span>
                             </div>
+                            <div class="doctor-experience">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                <span>Internal Medicine Expert</span>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="doctor-card">
+                    <article class="doctor-tile">
+                        <div class="doctor-icon">
+                            <i class="fas fa-magic" aria-hidden="true"></i>
+                        </div>
                         <div class="doctor-info">
                             <h3>Dr. Deepak Agrahari</h3>
                             <p class="doctor-specialty">Plastic Surgeon</p>
@@ -422,17 +555,28 @@
                                 <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                                 <span>MBBS, M.S, MCH (Plastic Surgery)</span>
                             </div>
+                            <div class="doctor-experience">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                <span>Reconstructive Surgery Expert</span>
+                            </div>
                         </div>
                     </article>
                 </div>
 
-                <article class="doctor-card" style="margin-top: 30px">
+                <article class="doctor-tile" style="margin-top: 30px; max-width: 400px; margin-left: auto; margin-right: auto;">
+                    <div class="doctor-icon">
+                        <i class="fas fa-brain" aria-hidden="true"></i>
+                    </div>
                     <div class="doctor-info">
                         <h3>Dr. Brijesh</h3>
                         <p class="doctor-specialty">Neurosurgery</p>
                         <div class="doctor-qualifications">
                             <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                             <span>MBBS, M.S, MCH (Neuro Surgery)</span>
+                        </div>
+                        <div class="doctor-experience">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            <span>Brain & Spine Surgery Expert</span>
                         </div>
                     </div>
                 </article>
@@ -1001,6 +1145,40 @@
             </div>
         </section>
 
+        <!-- Call to Action Section -->
+        <section class="cta-section" aria-labelledby="cta-heading">
+            <div class="container">
+                <div class="cta-content">
+                    <div class="cta-icon">
+                        <i class="fas fa-heartbeat" aria-hidden="true"></i>
+                    </div>
+                    <h2 id="cta-heading">Ready to Experience Quality Healthcare?</h2>
+                    <p>Book your appointment today or call us for any medical emergency. Our expert team is ready to provide you with the best possible care.</p>
+                    <div class="cta-actions">
+                        <a href="tel:+919451493229" class="btn btn-white btn-lg cta-btn">
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                            Call Now: 9451493229
+                        </a>
+                        
+                    </div>
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span>24/7 Emergency Services</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span>Cashless Treatment Available</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span>Expert Medical Team</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="contact" aria-labelledby="contact-heading">
             <div class="container">
@@ -1123,7 +1301,7 @@
                             <li><a href="#about">About Us</a></li>
                             <li><a href="doctors.html">Our Doctors</a></li>
                             <li><a href="#departments">Departments</a></li>
-                            <li><a href="#services">Services</a></li>
+                            <li><a href="#departments">Services</a></li>
                             <li><a href="#facilities">Facilities</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>

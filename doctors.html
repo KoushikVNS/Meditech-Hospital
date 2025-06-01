@@ -166,7 +166,7 @@
             <nav class="navbar" role="navigation" aria-label="Main navigation">
                 <div class="nav-brand">
                     <div class="logo">
-                        <i class="fas fa-heart" aria-hidden="true"></i>
+                        <img height="50" width="50" src="images/logo.png" alt="Meditech Laparoscopic Centre Logo">
                     </div>
                     <div class="brand-text">
                         <h1>Meditech</h1>
@@ -177,27 +177,81 @@
                 <div class="nav-menu" id="nav-menu">
                     <ul class="nav-list" role="menubar">
                         <li class="nav-item" role="none">
-                            <a href="index.html" class="nav-link" role="menuitem">Home</a>
+                            <a href="index.html" class="nav-link" role="menuitem" aria-current="page">Home</a>
                         </li>
-                        <li class="nav-item" role="none">
-                            <a href="doctors.html" class="nav-link active" role="menuitem" aria-current="page">Doctors</a>
+                        <li class="nav-item dropdown" role="none">
+                            <a href="doctors.html" class="nav-link dropdown-toggle" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                                Doctors <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu" role="menu">
+                                <a href="doctors.html" class="dropdown-item" role="menuitem">
+                                    <div>
+                                        <strong>View All Doctors</strong>
+                                        <small>Meet our complete medical team</small>
+                                    </div>
+                                </a>
+                            </div>
                         </li>
-                        <li class="nav-item" role="none">
-                            <a href="index.html#departments" class="nav-link" role="menuitem">Departments</a>
+                        <li class="nav-item dropdown" role="none">
+                            <a href="#departments" class="nav-link dropdown-toggle" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                                Departments <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu" role="menu">
+                                <a href="#surgery" class="dropdown-item" role="menuitem">
+                                    <div>
+                                        <strong>Surgical Specialties</strong>
+                                        <small>General, Laparoscopic, Urology & more</small>
+                                    </div>
+                                </a>
+                                <a href="#medicine" class="dropdown-item" role="menuitem">
+                                    <div>
+                                        <strong>Medical Departments</strong>
+                                        <small>Internal Medicine, ENT, Dental</small>
+                                    </div>
+                                </a>
+                                <a href="#critical-care" class="dropdown-item" role="menuitem">
+                                    <div>
+                                        <strong>Critical Care</strong>
+                                        <small>ICU, NICU, Dialysis, Ventilator Support</small>
+                                    </div>
+                                </a>
+                                <a href="#diagnostics" class="dropdown-item" role="menuitem">
+                                    <div>
+                                        <strong>Diagnostics</strong>
+                                        <small>Pathology, Ultrasound, X-Ray</small>
+                                    </div>
+                                </a>
+                            </div>
                         </li>
-                        <li class="nav-item" role="none">
-                            <a href="index.html#services" class="nav-link" role="menuitem">Services</a>
+                        <li class="nav-item dropdown" role="none">
+                            <a href="#services" class="nav-link dropdown-toggle" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                                Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu" role="menu">
+                                <a href="#emergency" class="dropdown-item" role="menuitem">
+                                    <div>
+                                        <strong>Emergency Services</strong>
+                                        <small>24/7 Emergency care and ambulance</small>
+                                    </div>
+                                </a>
+                                <a href="#ayushman-bharat" class="dropdown-item" role="menuitem">
+                                    <div>
+                                        <strong>Ayushman Bharat</strong>
+                                        <small>Free treatment for card holders</small>
+                                    </div>
+                                </a>
+                                <a href="#physiotherapy" class="dropdown-item" role="menuitem">
+                                    <div>
+                                        <strong>Physiotherapy</strong>
+                                        <small>Rehabilitation and recovery services</small>
+                                    </div>
+                                </a>
+                            </div>
                         </li>
                         <li class="nav-item" role="none">
                             <a href="index.html#contact" class="nav-link" role="menuitem">Contact</a>
                         </li>
                     </ul>
-                </div>
-
-                <div class="nav-actions">
-                    <a href="tel:+919451493229" class="btn btn-outline-danger" aria-label="Call emergency number">
-                        <i class="fas fa-phone" aria-hidden="true"></i> Emergency
-                    </a>
                 </div>
 
                 <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
@@ -222,39 +276,96 @@
         <!-- Featured Doctor -->
         <section class="doctors-page" aria-labelledby="featured-doctor-heading">
             <div class="container">
-                <h2 id="featured-doctor-heading" class="sr-only">Featured Doctor</h2>
-                <div class="featured-doctor-badge">
-                    <i class="fas fa-award" aria-hidden="true"></i>
-                    <span>Founder & Chief Surgeon</span>
+                <div class="section-header">
+                    <span class="section-badge">Founder & Chief Surgeon</span>
+                    <h2 id="featured-doctor-heading">Meet Our Expert</h2>
+                    <p>Leading our team with excellence in surgical care and innovation</p>
                 </div>
 
                 <article class="doctor-card featured-detailed">
-                    <div class="doctor-image">
-                        <img src="/images/dr-shankar-das.jpg" alt="Dr. Shankar Das - Chief Surgeon and Founder of Meditech Laparoscopic Centre" loading="eager" style="object-fit: cover; height: 700px; width: 700px;">
+                    <div class="doctor-image-wrapper">
+                        <div class="doctor-image">
+                            <img src="/images/dr-shankar-das.jpg" alt="Dr. Shankar Das - Chief Surgeon and Founder of Meditech Laparoscopic Centre" loading="eager">
+                        </div>
+                        <div class="doctor-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">20+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <!-- <div class="stat-item">
+                                <span class="stat-number">10k+</span>
+                                <span class="stat-label">Surgeries</span>
+                            </div> -->
+                        </div>
                     </div>
+
                     <div class="doctor-info-detailed">
-                        <h2>Dr. Shankar Das</h2>
-                        <p class="doctor-specialty">General and Laparoscopic Surgery</p>
-                        <p class="doctor-experience">20+ years Experience</p>
+                        <div class="info-header">
+                            <h2>Dr. Shankar Das</h2>
+                            <div class="specialty-badge">
+                                <i class="fas fa-stethoscope"></i>
+                                <span>General and Laparoscopic Surgery</span>
+                            </div>
+                        </div>
+
                         <div class="doctor-details-section">
-                            <div class="detail-item">
-                                <h3><i class="fas fa-graduation-cap" aria-hidden="true"></i> Qualifications</h3>
-                                <p>MBBS, M.S (Surgeon), IMS (BHU), FAMS, FAIS, FIAGES, FMAS, FICS</p>
+                            <div class="detail-item qualifications">
+                                <h3>
+                                    <i class="fas fa-graduation-cap"></i>
+                                    Qualifications & Certifications
+                                </h3>
+                                <div class="qualification-grid">
+                                    <div class="qual-item">
+                                        <span class="qual-tag">MBBS</span>
+                                        <span class="qual-desc">Bachelor of Medicine</span>
+                                    </div>
+                                    <div class="qual-item">
+                                        <span class="qual-tag">M.S</span>
+                                        <span class="qual-desc">Master of Surgery</span>
+                                    </div>
+                                    <div class="qual-item">
+                                        <span class="qual-tag">IMS (BHU)</span>
+                                        <span class="qual-desc">Institute of Medical Sciences</span>
+                                    </div>
+                                    <div class="qual-item">
+                                        <span class="qual-tag">FAMS</span>
+                                        <span class="qual-desc">Fellowship of Academy</span>
+                                    </div>
+                                    <div class="qual-item">
+                                        <span class="qual-tag">FICS</span>
+                                        <span class="qual-desc">Fellow of International College</span>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="detail-item">
-                                <h4>About</h4>
-                                <p>Dr. Shankar Das is the founder and chief surgeon at Meditech Laparoscopic Centre. With over 20 years of experience in general and laparoscopic surgery, he has performed thousands of successful surgeries. He is known for his expertise in minimally invasive surgical techniques.</p>
+                            <div class="detail-item about">
+                                <h3><i class="fas fa-user-md"></i> Professional Overview</h3>
+                                <p>Dr. Shankar Das is the founder and chief surgeon at Meditech Laparoscopic Centre, bringing over two decades of surgical excellence. Specializing in minimally invasive techniques, he has successfully performed thousands of surgeries, establishing new standards in patient care and surgical innovation.</p>
                             </div>
 
-                            <div class="detail-item">
-                                <h4>Specialties</h4>
-                                <div class="specialties-tags">
-                                    <span class="specialty-tag">General Surgery</span>
-                                    <span class="specialty-tag">Laparoscopic Surgery</span>
-                                    <span class="specialty-tag">Hernia Repair</span>
-                                    <span class="specialty-tag">Gallbladder Surgery</span>
-                                    <span class="specialty-tag">Appendectomy</span>
+                            <div class="detail-item specialties">
+                                <h3><i class="fas fa-star"></i> Areas of Expertise</h3>
+                                <div class="specialties-grid">
+                                    <div class="specialty-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>General Surgery</span>
+                                    </div>
+                                    <div class="specialty-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Laparoscopic Surgery</span>
+                                    </div>
+                                    <div class="specialty-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Hernia Repair</span>
+                                    </div>
+                                    <div class="specialty-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Gallbladder Surgery</span>
+                                    </div>
+                                    <div class="specialty-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Appendectomy</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
